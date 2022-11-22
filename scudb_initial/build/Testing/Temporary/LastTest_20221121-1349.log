@@ -1,0 +1,338 @@
+Start testing: Nov 21 21:49 CST
+----------------------------------------------------------
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/b_plus_tree_concurrent_test
+6/13 Testing: b_plus_tree_concurrent_test
+6/13 Test: b_plus_tree_concurrent_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/b_plus_tree_concurrent_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"b_plus_tree_concurrent_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"b_plus_tree_concurrent_test" end time: Nov 21 21:49 CST
+"b_plus_tree_concurrent_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/b_plus_tree_print_test
+7/13 Testing: b_plus_tree_print_test
+7/13 Test: b_plus_tree_print_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/b_plus_tree_print_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"b_plus_tree_print_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"b_plus_tree_print_test" end time: Nov 21 21:49 CST
+"b_plus_tree_print_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/b_plus_tree_test
+8/13 Testing: b_plus_tree_test
+8/13 Test: b_plus_tree_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/b_plus_tree_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"b_plus_tree_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"b_plus_tree_test" end time: Nov 21 21:49 CST
+"b_plus_tree_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/log_manager_test
+9/13 Testing: log_manager_test
+9/13 Test: log_manager_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/log_manager_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"log_manager_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"log_manager_test" end time: Nov 21 21:49 CST
+"log_manager_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/header_page_test
+10/13 Testing: header_page_test
+10/13 Test: header_page_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/header_page_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"header_page_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"header_page_test" end time: Nov 21 21:49 CST
+"header_page_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/tuple_test
+11/13 Testing: tuple_test
+11/13 Test: tuple_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/tuple_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"tuple_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tuple_test" end time: Nov 21 21:49 CST
+"tuple_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/type_test
+12/13 Testing: type_test
+12/13 Test: type_test
+Command: "" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/type_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"type_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"type_test" end time: Nov 21 21:49 CST
+"type_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/13 Testing: lock_manager_test
+4/13 Test: lock_manager_test
+Command: "/home/northernland/Documents/scudb_initial/build/test/lock_manager_test" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/lock_manager_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"lock_manager_test" start time: Nov 21 21:49 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 1 test from 1 test case.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from LockManagerTest
+[0;32m[ RUN      ] [mLockManagerTest.BasicTest
+/home/northernland/Documents/scudb_initial/test/concurrency/lock_manager_test.cpp:25: Failure
+Value of: true
+Expected: res
+Which is: false
+/home/northernland/Documents/scudb_initial/test/concurrency/lock_manager_test.cpp:34: Failure
+Value of: true
+Expected: res
+Which is: false
+[0;31m[  FAILED  ] [mLockManagerTest.BasicTest (18 ms)
+[0;32m[----------] [m1 test from LockManagerTest (18 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test case ran. (18 ms total)
+[0;32m[  PASSED  ] [m0 tests.
+[0;31m[  FAILED  ] [m1 test, listed below:
+[0;31m[  FAILED  ] [mLockManagerTest.BasicTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Failed.
+"lock_manager_test" end time: Nov 21 21:49 CST
+"lock_manager_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/13 Testing: virtual_table_test
+13/13 Test: virtual_table_test
+Command: "/home/northernland/Documents/scudb_initial/build/test/virtual_table_test" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/virtual_table_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"virtual_table_test" start time: Nov 21 21:49 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 1 test from 1 test case.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from VtableTest
+[0;32m[ RUN      ] [mVtableTest.CreateTest
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:27: Failure
+Value of: 0
+Expected: rc
+Which is: 1
+SQL error: no such module: vtable
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:29: Failure
+Value of: ExecSQL( db, "CREATE VIRTUAL TABLE foo1 USING vtable ('a INT, b " "int, c smallint, d varchar, e bigint, f bool', 'foo1_pk b')")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:32: Failure
+Value of: ExecSQL(db, "INSERT INTO foo1 VALUES(1, 2, 3, 'hello', 2,1)")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:33: Failure
+Value of: ExecSQL(db, "INSERT INTO foo1 VALUES(3, 4, 5, 'Nihao',4, 1)")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:34: Failure
+Value of: ExecSQL(db, "INSERT INTO foo1 VALUES(2, 3, 4, 'world',3, 1)")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:35: Failure
+Value of: ExecSQL(db, "SELECT * FROM foo1")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:36: Failure
+Value of: ExecSQL(db, "DELETE FROM foo1 WHERE b = 2")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:37: Failure
+Value of: ExecSQL(db, "SELECT * FROM foo1")
+  Actual: false
+Expected: true
+SQL error: no such table: foo1
+/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:38: Failure
+Value of: ExecSQL(db, "DROP TABLE foo1")
+  Actual: false
+Expected: true
+[0;31m[  FAILED  ] [mVtableTest.CreateTest (12 ms)
+[0;32m[----------] [m1 test from VtableTest (12 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test case ran. (12 ms total)
+[0;32m[  PASSED  ] [m0 tests.
+[0;31m[  FAILED  ] [m1 test, listed below:
+[0;31m[  FAILED  ] [mVtableTest.CreateTest
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"virtual_table_test" end time: Nov 21 21:49 CST
+"virtual_table_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/13 Testing: rwmutex_test
+3/13 Test: rwmutex_test
+Command: "/home/northernland/Documents/scudb_initial/build/test/rwmutex_test" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/rwmutex_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"rwmutex_test" start time: Nov 21 21:49 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 1 test from 1 test case.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from RWMutexTest
+[0;32m[ RUN      ] [mRWMutexTest.BasicTest
+[0;32m[       OK ] [mRWMutexTest.BasicTest (14 ms)
+[0;32m[----------] [m1 test from RWMutexTest (14 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test case ran. (14 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"rwmutex_test" end time: Nov 21 21:49 CST
+"rwmutex_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1/13 Testing: buffer_pool_manager_test
+1/13 Test: buffer_pool_manager_test
+Command: "/home/northernland/Documents/scudb_initial/build/test/buffer_pool_manager_test" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/buffer_pool_manager_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"buffer_pool_manager_test" start time: Nov 21 21:49 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 2 tests from 1 test case.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m2 tests from BufferPoolManagerTest
+[0;32m[ RUN      ] [mBufferPoolManagerTest.SampleTest
+[0;32m[       OK ] [mBufferPoolManagerTest.SampleTest (7 ms)
+[0;32m[ RUN      ] [mBufferPoolManagerTest.SampleTest2
+[0;32m[       OK ] [mBufferPoolManagerTest.SampleTest2 (0 ms)
+[0;32m[----------] [m2 tests from BufferPoolManagerTest (7 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m2 tests from 1 test case ran. (7 ms total)
+[0;32m[  PASSED  ] [m2 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"buffer_pool_manager_test" end time: Nov 21 21:49 CST
+"buffer_pool_manager_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/13 Testing: lru_replacer_test
+2/13 Test: lru_replacer_test
+Command: "/home/northernland/Documents/scudb_initial/build/test/lru_replacer_test" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/lru_replacer_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"lru_replacer_test" start time: Nov 21 21:49 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 3 tests from 1 test case.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m3 tests from LRUReplacerTest
+[0;32m[ RUN      ] [mLRUReplacerTest.SampleTest
+[0;32m[       OK ] [mLRUReplacerTest.SampleTest (0 ms)
+[0;32m[ RUN      ] [mLRUReplacerTest.SampleTest1
+[0;32m[       OK ] [mLRUReplacerTest.SampleTest1 (0 ms)
+[0;32m[ RUN      ] [mLRUReplacerTest.BasicTest
+[0;32m[       OK ] [mLRUReplacerTest.BasicTest (0 ms)
+[0;32m[----------] [m3 tests from LRUReplacerTest (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m3 tests from 1 test case ran. (1 ms total)
+[0;32m[  PASSED  ] [m3 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"lru_replacer_test" end time: Nov 21 21:49 CST
+"lru_replacer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/13 Testing: extendible_hash_test
+5/13 Test: extendible_hash_test
+Command: "/home/northernland/Documents/scudb_initial/build/test/extendible_hash_test" "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/extendible_hash_test.xml"
+Directory: /home/northernland/Documents/scudb_initial/build/test
+"extendible_hash_test" start time: Nov 21 21:49 CST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 8 tests from 1 test case.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m8 tests from ExtendibleHashTest
+[0;32m[ RUN      ] [mExtendibleHashTest.SampleTest
+[0;32m[       OK ] [mExtendibleHashTest.SampleTest (1 ms)
+[0;32m[ RUN      ] [mExtendibleHashTest.SampleTest2
+[0;32m[       OK ] [mExtendibleHashTest.SampleTest2 (4 ms)
+[0;32m[ RUN      ] [mExtendibleHashTest.BasicDepthTest
+[0;32m[       OK ] [mExtendibleHashTest.BasicDepthTest (0 ms)
+[0;32m[ RUN      ] [mExtendibleHashTest.BasicRandomTest
+seed: 1669038564
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Failed.
+"extendible_hash_test" end time: Nov 21 21:49 CST
+"extendible_hash_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 21 21:49 CST

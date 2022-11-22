@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++"
+	BuildStamp="20221121-1349-Experimental"
+	Name="northernland-virtual-machine"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="11.3.0"
+	OSName="Linux"
+	Hostname="northernland-virtual-machine"
+	OSRelease="5.15.0-52-generic"
+	OSVersion="#58-Ubuntu SMP Thu Oct 13 08:03:55 UTC 2022"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="158"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="2139"
+	TotalPhysicalMemory="1941"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2304"
+	>
+	<Testing>
+		<StartDateTime>Nov 21 21:49 CST</StartDateTime>
+		<StartTestTime>1669038564</StartTestTime>
+		<TestList>
+			<Test>./test/b_plus_tree_concurrent_test</Test>
+			<Test>./test/b_plus_tree_print_test</Test>
+			<Test>./test/b_plus_tree_test</Test>
+			<Test>./test/log_manager_test</Test>
+			<Test>./test/header_page_test</Test>
+			<Test>./test/tuple_test</Test>
+			<Test>./test/type_test</Test>
+			<Test>./test/lock_manager_test</Test>
+			<Test>./test/virtual_table_test</Test>
+			<Test>./test/rwmutex_test</Test>
+			<Test>./test/buffer_pool_manager_test</Test>
+			<Test>./test/lru_replacer_test</Test>
+			<Test>./test/extendible_hash_test</Test>
+		</TestList>
+		<Test Status="notrun">
+			<Name>b_plus_tree_concurrent_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/b_plus_tree_concurrent_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/b_plus_tree_concurrent_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>b_plus_tree_print_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/b_plus_tree_print_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/b_plus_tree_print_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>b_plus_tree_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/b_plus_tree_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/b_plus_tree_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>log_manager_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/log_manager_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/log_manager_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>header_page_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/header_page_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/header_page_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>tuple_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/tuple_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/tuple_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>type_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/type_test</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Unable to find executable</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/northernland/Documents/scudb_initial/build/test/type_test</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>lock_manager_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/lock_manager_test</FullName>
+			<FullCommandLine>/home/northernland/Documents/scudb_initial/build/test/lock_manager_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/lock_manager_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.108114</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/northernland/Documents/scudb_initial/build/test/lock_manager_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/lock_manager_test.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJy1kk1LAzEQhu/5C73MsQW72w8FWfFQaStCFWmrHoqUNDvtBpPJkmSt/nv3i0UKRVpwTmEyz8ybNzPPiCTtQHNJ7Q5srdGw00Z8rItMIARrrXo3w4Fe3TbxDq2VntdgHzw6X4H1WXCHQcN1myi5e2U2XFWFSJ/SGtJIHhz6bpYexX6PmeXyHjnxHdplnmwQmL88QRklclAW3HEnRQmEidEYkrE+QUuKUxyOjcgKHS50Ios3a0nSS67CYmooDInMWiTxHarKm7LturgNRJpGg6sIplyqzCJ75SpDMNsIvM2QTb5SFB7jCCw69pZIkYB0EWy5cvgPUoaXZ0opbeznNsJ09DCbjP+yEdr9a9Cuc8aX1Sh447nqsFN3xSO33djs6dhyHllKsJyCg9nN8sDzaLFoXt0rKRccc6XqegFKutxQ2KAy++hkCxnL5dWly8liyX4A5eQjpA==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>virtual_table_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/virtual_table_test</FullName>
+			<FullCommandLine>/home/northernland/Documents/scudb_initial/build/test/virtual_table_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/virtual_table_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0806581</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/northernland/Documents/scudb_initial/build/test/virtual_table_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/virtual_table_test.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJzVll9vmzAUxd/5Cn05ygvJRENJ2v1h6gNraRcpSzsg6UM1RQacgmbsyJi2H38GIlZNTaNWfcj8hM29vud3LPk6qDjP+R0KkvP+ACspCtwVIvm9rFeGSWIc3B59HY+K29Nu/MLBbRFsEh0oWqo2cfOdkJIOu7zDbjR5l0zEhLWBlN/nUvCCcoWSqsNqvTXtaZmFIjGjkZ530QjmMzSjif4bMTyTlKg22M5EQW0upMqo5Izw1D4XSVWXL+0yqdJ4mfNc5YTZdTH7vtnF1hpVRdiymS3rP8NkvXZHn1xckJxVkhoLwioKsXJxZPiPa5oomrqQiXGT5UmGvHThGOHPKaiUQrrgAmWlfxQirRh10VZ6b4FfnhPoP9JEK+kjjS30zgLfi3wsJkE096aIvG9THyshHMzDyexyIwx9k2AyiyzE6KGXc2UhQVkQxprvFPdEJhmRFiji/K5ZXCEWgpkWzHq/5fo3YnPQGxiAl9RyXawIK+kTv5Ss6HMuNRrcRtY7WzQevWRR49BkFvpBVNNftcYsvOncD/uOhZGFscbLKGPCrKfO3vGN38ynyY4tnGi+WZ4Rzadn+8d3/Ga+9vA0lPkgJEtNa7yPfCc7+UJ/6p9F+ICL4OpHo2HfGD7uZDjXDPoW6ghw890PfH3ZnGK0bzTP3vr/2Yl83n0iwdX1k26wG6BpxI5uxLjwJlP//KVGjL4zQlEOXtfrN1lQQhE2MF77vlCUyMNUPPBtD5otDxlIwof/1O5eHbj2wrCDPWqyyuE2M9pdLbC81MYhpkw8uK9yzjC0tE1Y5IeR8QfKaDBj====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>rwmutex_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/rwmutex_test</FullName>
+			<FullCommandLine>/home/northernland/Documents/scudb_initial/build/test/rwmutex_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/rwmutex_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0827813</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/northernland/Documents/scudb_initial/build/test/rwmutex_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/rwmutex_test.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyVkD0LwjAQhvf+hS43tkODVTdxUBQH8YNWcSgiMcZSbC7SpOrPV5vSqlCh7xSO5+Eub5AjJhiDoAk6LpwzKSAWkl0O7wlhzLKjzqDXFdGwyh7sSASl6IPmShuxfDOqOKk8r0rhzVJ5pKkBOd6STKLgqEFx7eXXRu1zTbBb5Jo/Nq9BhUOwXUIRc12NkDFVCfuGTVbzPzA4fh+EclseVGqgpaapa7VtQXOaeSd5x6baG+qGjCL52V3/dj0Kw+mkrMZYxHoCTX+Wqg==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>buffer_pool_manager_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/buffer_pool_manager_test</FullName>
+			<FullCommandLine>/home/northernland/Documents/scudb_initial/build/test/buffer_pool_manager_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/buffer_pool_manager_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0401365</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/northernland/Documents/scudb_initial/build/test/buffer_pool_manager_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/buffer_pool_manager_test.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJydkjFvwjAQhff8BZYbkyEWhKEDYmgFYkAtKIEpQtWRXqII+4xsB/5+2yQKikQk4G1n3+dnvbu4Yi65AIUl+wHkRisolM5O3/8nIsu8UTqeTSOVzjsdYJSquAUjcGSdbchJXUCGlkQHhp1qcCX1EWXTSHwpjWZF7MCSC6vzINbz+ajynMxWa/mJjAWZ3d9dR0K8/4JaNXm3WSSozpL6XKPN+jEO/DdQNnjVNnrVNwJ/3DN+Oqnm5+C0Qxl4zw7KEZrwR195aDWGVgIMsuh73yLYvifJctFm174gvF/ADs6S====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>lru_replacer_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/lru_replacer_test</FullName>
+			<FullCommandLine>/home/northernland/Documents/scudb_initial/build/test/lru_replacer_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/lru_replacer_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0393758</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/northernland/Documents/scudb_initial/build/test/lru_replacer_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/lru_replacer_test.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyVkj1PwzAQhvf8hS43JkOsho6oQysQAwiQQ6eoqg5zVBH2ObJd+PtAErkfUlT53Wzd40d3PnlgbnkPBlvOC/h01sDeWPW1+78RSmWzZn67uDHNMmYLs8bIEVxAIB/8QFb9ARR6EhEsY3rwQdt31EMh8XfrLBviAJ5CeegmsTPPk9xI6jQqcm9/t5EBuXmGPj1zUSZqNJ2mc2LIy+M1AvI5GF+kq6p0V5UoW6NvVUpbEbgUJQx9QCHYgLrIUn87ELryw/7w1H5N7RU4ZAF5deI+Nv26quv7u3FK4wsi+wVgYt4P====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>extendible_hash_test</Name>
+			<Path>./test</Path>
+			<FullName>./test/extendible_hash_test</FullName>
+			<FullCommandLine>/home/northernland/Documents/scudb_initial/build/test/extendible_hash_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/extendible_hash_test.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>SEGFAULT</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>0</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.259004</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/northernland/Documents/scudb_initial/build/test/extendible_hash_test "--gtest_color=yes" "--gtest_output=xml:/home/northernland/Documents/scudb_initial/build/test/extendible_hash_test.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJydj8FqwkAQhu++gpc5xoMhiWlILb2IYqGgkLanUGTdjLqYmQ3ZVXz8tpsSCEVo8t9m5v/4mOzCrPgIJBR7EzjUmuBIWp53PxtfytE4D55mEeXPbT5hnFP2C6Zg0VjTkKEbQAqDfgtO2zhwXeq9KJsi8lXVmgnZgkE7vVR3sY5ndbPIhdqX+CLM6f370GKQfWzAxWF/m/6boKrELtRk+/oPCLwQyEwGCaNBxgi8uKdyIYySS6zsqeefXRC8YIg4E1xocmaDWMwhTJLHYJY+JPHoC7/4wR8=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Nov 21 21:49 CST</EndDateTime>
+		<EndTestTime>1669038564</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

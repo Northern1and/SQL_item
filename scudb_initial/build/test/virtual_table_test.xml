@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" disabled="0" errors="0" timestamp="2022-11-21T21:49:24" time="0.012" name="AllTests">
+  <testsuite name="VtableTest" tests="1" failures="1" disabled="0" errors="0" time="0.012">
+    <testcase name="CreateTest" status="run" time="0.012" classname="VtableTest">
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:27&#x0A;Value of: 0&#x0A;Expected: rc&#x0A;Which is: 1" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:27
+Value of: 0
+Expected: rc
+Which is: 1]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:29&#x0A;Value of: ExecSQL( db, &quot;CREATE VIRTUAL TABLE foo1 USING vtable (&apos;a INT, b &quot; &quot;int, c smallint, d varchar, e bigint, f bool&apos;, &apos;foo1_pk b&apos;)&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:29
+Value of: ExecSQL( db, "CREATE VIRTUAL TABLE foo1 USING vtable ('a INT, b " "int, c smallint, d varchar, e bigint, f bool', 'foo1_pk b')")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:32&#x0A;Value of: ExecSQL(db, &quot;INSERT INTO foo1 VALUES(1, 2, 3, &apos;hello&apos;, 2,1)&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:32
+Value of: ExecSQL(db, "INSERT INTO foo1 VALUES(1, 2, 3, 'hello', 2,1)")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:33&#x0A;Value of: ExecSQL(db, &quot;INSERT INTO foo1 VALUES(3, 4, 5, &apos;Nihao&apos;,4, 1)&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:33
+Value of: ExecSQL(db, "INSERT INTO foo1 VALUES(3, 4, 5, 'Nihao',4, 1)")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:34&#x0A;Value of: ExecSQL(db, &quot;INSERT INTO foo1 VALUES(2, 3, 4, &apos;world&apos;,3, 1)&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:34
+Value of: ExecSQL(db, "INSERT INTO foo1 VALUES(2, 3, 4, 'world',3, 1)")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:35&#x0A;Value of: ExecSQL(db, &quot;SELECT * FROM foo1&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:35
+Value of: ExecSQL(db, "SELECT * FROM foo1")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:36&#x0A;Value of: ExecSQL(db, &quot;DELETE FROM foo1 WHERE b = 2&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:36
+Value of: ExecSQL(db, "DELETE FROM foo1 WHERE b = 2")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:37&#x0A;Value of: ExecSQL(db, &quot;SELECT * FROM foo1&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:37
+Value of: ExecSQL(db, "SELECT * FROM foo1")
+  Actual: false
+Expected: true]]></failure>
+      <failure message="/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:38&#x0A;Value of: ExecSQL(db, &quot;DROP TABLE foo1&quot;)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[/home/northernland/Documents/scudb_initial/test/vtable/virtual_table_test.cpp:38
+Value of: ExecSQL(db, "DROP TABLE foo1")
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

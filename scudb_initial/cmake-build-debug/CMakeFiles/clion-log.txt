@@ -1,0 +1,4 @@
+/home/northernland/Documents/CLion_for_Linux/clion-2020.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/bin/make -DCMAKE_C_COMPILER=/bin/gcc -DCMAKE_CXX_COMPILER=/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/northernland/Documents/scudb_initial
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/northernland/Documents/scudb_initial/cmake-build-debug
