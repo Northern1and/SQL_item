@@ -50,29 +50,32 @@ BufferPoolManager::~BufferPoolManager() {
  */
 Page *BufferPoolManager::FetchPage(page_id_t page_id) {
   lock_guard<mutex> lck(latch_);
-  Page *tar = nullptr;
-  if (page_table_->Find(page_id,tar)) { //1.1
-    tar->pin_count_++;
-    replacer_->Erase(tar);
-    return tar;
-  }
-  //1.2
-  tar = GetVictimPage();
-  if (tar == nullptr) return tar;
-  //2
-  if (tar->is_dirty_) {
-    disk_manager_->WritePage(tar->GetPageId(),tar->data_);
-  }
-  //3
-  page_table_->Remove(tar->GetPageId());
-  page_table_->Insert(page_id,tar);
-  //4
-  disk_manager_->ReadPage(page_id,tar->data_);
-  tar->pin_count_ = 1;
-  tar->is_dirty_ = false;
-  tar->page_id_= page_id;
+  Page *tarPageget = nullptr;
 
-  return tar;
+  // 如果在buffer中找到了该页，则直接返回该页
+  if (page_table_->Find(page_id,tarPage)) {//1.1
+    tarPage->pin_count_++;
+    replacer_->Erase(tarPage);
+    return tarPage;
+  }
+  //1.2 如果没找到，寻找一个buffer中空余的位置，如果没有这样的位置则选择一个该换的页
+  // 寻找位置或换页的过程通过调用GetVictimPage实现
+  tarPage = GetVictimPage();
+  if (tarPage == nullptr) return tarPage;
+  //2 找到的页如果是脏页，先写出再换页
+  if (tarPage->is_dirty_) {
+    disk_manager_->WritePage(tarPage->GetPageId(),tarPage->data_);
+  }
+  //3 从哈希表中删除旧页信息，并插入新表的信息
+  page_table_->Remove(tarPage->GetPageId());
+  page_table_->Insert(page_id,tarPage);
+  //4 换页后，从buffer中读页
+  disk_manager_->ReadPage(page_id,tarPage->data_);
+  tarPage->pin_count_ = 1;
+  tarPage->is_dirty_ = false;
+  tarPage->page_id_= page_id;
+
+  return tarPage;
 }
 //Page *BufferPoolManager::find
 
@@ -82,21 +85,31 @@ Page *BufferPoolManager::FetchPage(page_id_t page_id) {
  * replacer if pin_count<=0 before this call, return false. is_dirty: set the
  * dirty flag of this page
  */
+// pin页面更新， 返回值是一个布尔类型，代表着是否为pin页
 bool BufferPoolManager::UnpinPage(page_id_t page_id, bool is_dirty) {
+  
+  // 根据page_id找页  
   lock_guard<mutex> lck(latch_);
-  Page *tar = nullptr;
-  page_table_->Find(page_id,tar);
-  if (tar == nullptr) {
+  Page *tarPage = nullptr;
+  page_table_->Find(page_id,tarPage);
+  
+  // 空余的页认为是未被pin的，可以插入新页
+  if (tarPage == nullptr) {
     return false;
   }
-  tar->is_dirty_ = is_dirty;
-  if (tar->GetPinCount() <= 0) {
+  
+  // Pin_count小于0，代表该页未被pin
+  tarPage->is_dirty_ = is_dirty;
+  if (tarPage->GetPinCount() <= 0) {
     return false;
   }
-  ;
-  if (--tar->pin_count_ == 0) {
-    replacer_->Insert(tar);
+
+  // pin_count刚变为0，该页由pin转为非pin页，进入可替换的页集中
+  if (--tarPage->pin_count_ == 0) {
+    replacer_->Insert(tarPage);
   }
+
+  // 以上情况皆不是，说明pin_count > 0 ,该页仍在pin中
   return true;
 }
 
@@ -107,15 +120,20 @@ bool BufferPoolManager::UnpinPage(page_id_t page_id, bool is_dirty) {
  * NOTE: make sure page_id != INVALID_PAGE_ID
  */
 bool BufferPoolManager::FlushPage(page_id_t page_id) {
+  
+  // 根据id找页
   lock_guard<mutex> lck(latch_);
-  Page *tar = nullptr;
-  page_table_->Find(page_id,tar);
-  if (tar == nullptr || tar->page_id_ == INVALID_PAGE_ID) {
+  Page *tarPage = nullptr;
+  page_table_->Find(page_id,tarPage);
+
+  // 若页表空余或page_id无效，返回false
+  if (tarPage == nullptr || tarPage->page_id_ == INVALID_PAGE_ID) {
     return false;
   }
-  if (tar->is_dirty_) {
-    disk_manager_->WritePage(page_id,tar->GetData());
-    tar->is_dirty_ = false;
+  // 脏页先写出
+  if (tarPage->is_dirty_) {
+    disk_manager_->WritePage(page_id,tarPage->GetData());
+    tarPage->is_dirty_ = false;
   }
 
   return true;
@@ -129,20 +147,28 @@ bool BufferPoolManager::FlushPage(page_id_t page_id) {
  * call disk manager's DeallocatePage() method to delete from disk file. If
  * the page is found within page table, but pin_count != 0, return false
  */
+// 删页函数
 bool BufferPoolManager::DeletePage(page_id_t page_id) {
+  // 根据id找页
   lock_guard<mutex> lck(latch_);
-  Page *tar = nullptr;
-  page_table_->Find(page_id,tar);
-  if (tar != nullptr) {
-    if (tar->GetPinCount() > 0) {
+  Page *tarPage = nullptr;
+  page_table_->Find(page_id,tarPage);
+  
+  if (tarPage != nullptr) {
+    // 如果找到了该页
+    
+    // 页仍被pin，不能进行删除  
+    if (tarPage->GetPinCount() > 0) {
       return false;
     }
-    replacer_->Erase(tar);
+    // 从buffer中删页并更新页表
+    replacer_->Erase(tarPage);
     page_table_->Remove(page_id);
-    tar->is_dirty_= false;
-    tar->ResetMemory();
-    free_list_->push_back(tar);
+    tarPage->is_dirty_= false;
+    tarPage->ResetMemory();
+    free_list_->push_back(tarPage);
   }
+  // 磁盘文件删除
   disk_manager_->DeallocatePage(page_id);
   return true;
 }
@@ -155,44 +181,54 @@ bool BufferPoolManager::DeletePage(page_id_t page_id) {
  * update new page's metadata, zero out memory and add corresponding entry
  * into page table. return nullptr if all the pages in pool are pinned
  */
+// 创建新页的函数
 Page *BufferPoolManager::NewPage(page_id_t &page_id) {
   lock_guard<mutex> lck(latch_);
-  Page *tar = nullptr;
-  tar = GetVictimPage();
-  if (tar == nullptr) return tar;
+  Page *tarPage = nullptr;
+  // 寻找页表中的空余或者目标替换页
+  tarPage = GetVictimPage();
+  // tarPage为空，说明页表空余，无需进行替换
+  if (tarPage == nullptr) return tarPage;
 
+  // 获取一个新的page_id
   page_id = disk_manager_->AllocatePage();
-  //2
-  if (tar->is_dirty_) {
-    disk_manager_->WritePage(tar->GetPageId(),tar->data_);
+  // 如果目标替换页为脏页，先写出
+  if (tarPage->is_dirty_) {
+    disk_manager_->WritePage(tarPage->GetPageId(),tarPage->data_);
   }
-  //3
-  page_table_->Remove(tar->GetPageId());
-  page_table_->Insert(page_id,tar);
+  // 在页表中删除旧页，插入新页
+  page_table_->Remove(tarPage->GetPageId());
+  page_table_->Insert(page_id,tarPage);
 
-  //4
-  tar->page_id_ = page_id;
-  tar->ResetMemory();
-  tar->is_dirty_ = false;
-  tar->pin_count_ = 1;
+  // 初始化新页
+  tarPage->page_id_ = page_id;
+  tarPage->ResetMemory();
+  tarPage->is_dirty_ = false;
+  tarPage->pin_count_ = 1;
 
-  return tar;
+  return tarPage;
 }
-
+// GetVictimPage函数，用于获取页表中该替换的页
 Page *BufferPoolManager::GetVictimPage() {
-  Page *tar = nullptr;
+  Page *tarPage = nullptr;
   if (free_list_->empty()) {
+
+
     if (replacer_->Size() == 0) {
       return nullptr;
     }
-    replacer_->Victim(tar);
+    replacer_->Victim(tarPage);
   } else {
-    tar = free_list_->front();
+    // 更新可替换页集。pop链表尾结点，将插入的新结点插入头部
+    tarPage = free_list_->front();
     free_list_->pop_front();
-    assert(tar->GetPageId() == INVALID_PAGE_ID);
+    // 检测新页id是否有效
+    assert(tarPage->GetPageId() == INVALID_PAGE_ID);
   }
-  assert(tar->GetPinCount() == 0);
-  return tar;
+  // 检测新页的pin_count
+  assert(tarPage->GetPinCount() == 0);
+  return tarPage;
 }
 
 } // namespace cmudb
+
